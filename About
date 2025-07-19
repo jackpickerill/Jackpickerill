@@ -1,0 +1,26 @@
+import Header from "@/components/header"
+
+export default function About() {
+  return (
+    <div className="min-h-screen bg-white">
+      <Header />
+      <main className="max-w-4xl mx-auto px-6 py-8">
+        <div className="text-center text-gray-700">
+          <h2 className="text-2xl font-light mb-6">About & Contact</h2>
+          <div className="max-w-2xl mx-auto space-y-6">
+            <p className="text-lg leading-relaxed">
+              I'm Jack Pickerill, a photographer based in the UK. My work focuses on capturing authentic moments and
+              creating compelling visual narratives.
+            </p>
+            <div className="pt-6">
+              <h3 className="text-xl font-light mb-4">Get in Touch</h3>
+              <p className="text-lg">
+                For inquiries about commissions, prints, or collaborations, please feel free to reach out.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  )
+}
