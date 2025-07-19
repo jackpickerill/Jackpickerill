@@ -1,18 +1,25 @@
-import Header from "@/components/header"
+import type React from "react"
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+import "./globals.css"
 
-export default function Home() {
+const inter = Inter({ subsets: ["latin"] })
+
+export const metadata: Metadata = {
+  title: "Jack Pickerill - Photographer",
+  description: "Photography portfolio of Jack Pickerill",
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <main className="max-w-4xl mx-auto px-6 py-8">
-        <div className="text-center text-gray-700">
-          <h2 className="text-2xl font-light mb-6">Welcome</h2>
-          <p className="text-lg leading-relaxed max-w-2xl mx-auto">
-            Welcome to my photography portfolio. Here you'll find a collection of my work spanning various genres and
-            subjects. I'm passionate about capturing moments that tell stories and evoke emotions.
-          </p>
-        </div>
-      </main>
-    </div>
+    <html lang="en">
+      <body className={inter.className}>
+        <div className="min-h-screen bg-white">{children}</div>
+      </body>
+    </html>
   )
 }
