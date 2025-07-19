@@ -1,0 +1,18 @@
+import Header from "@/components/header"
+
+export default function Personal() {
+  return (
+    <div className="min-h-screen bg-white">
+      <Header />
+      <main className="max-w-4xl mx-auto px-6 py-8">
+        <div className="text-center text-gray-700">
+          <h2 className="text-2xl font-light mb-6">Personal</h2>
+          <p className="text-lg leading-relaxed max-w-2xl mx-auto">
+            This section showcases my personal projects and experimental work. These images represent my artistic vision
+            and creative exploration beyond commissioned work.
+          </p>
+        </div>
+      </main>
+    </div>
+  )
+}
